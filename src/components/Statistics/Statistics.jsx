@@ -1,3 +1,6 @@
+
+import {getRandomColor} from'./Random.color';
+
 import {
     StatisticsSection,
     Title,
@@ -16,15 +19,14 @@ export const Statistics = ({ title, stats }) => {
             <StatList>
                 {stats.map(stat => {
                     return (
-                        <Item key={stat.id}>
+                        <Item key={stat.id} style={{backgroundColor: getRandomColor() }}>
                             <Label>{stat.label}</Label>
                             <Percentage>{stat.percentage}</Percentage>
                         </Item>
                     );
-                })};
+                })}
             </StatList>
         </StatisticsSection>
     )
 };
 
-  
