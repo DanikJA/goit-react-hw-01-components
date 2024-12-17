@@ -1,7 +1,5 @@
 import { FriendListItem } from './FriendListItem';
-import {
-    FriendListElement
-} from './Friends.styled.jsx';
+import {FriendListElement} from './Friends.styled.jsx';
 
 export const FriendList = ({ friends }) => {
     return (
