@@ -15,13 +15,12 @@ export const Statistics = ({ title, stats }) => {
     return (
         <StatisticsSection>
             <Title>{title}</Title>
-
             <StatList>
                 {stats.map(stat => {
                     return (
                         <Item key={stat.id} style={{backgroundColor: getRandomColor() }}>
                             <Label>{stat.label}</Label>
-                            <Percentage>{stat.percentage}</Percentage>
+                            <Percentage>{stat.percentage}%</Percentage>
                         </Item>
                     );
                 })}

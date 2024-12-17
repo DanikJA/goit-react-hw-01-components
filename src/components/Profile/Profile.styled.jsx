@@ -8,6 +8,8 @@ export const Wrapper = styled.div`
   padding: 50px 50px;
   background-color: #e7ecf2;
   border-radius: 15px;
+  box-shadow: 0 6px 10px rgba(0, 0, 0, 0.3);
+
 `;
 
 export const Avatar = styled.img`
